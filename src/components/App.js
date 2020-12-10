@@ -1,15 +1,17 @@
 import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
 
+import Header from "./Header";
 import Posts from "./Posts";
-// import PostsClass from "./PostsClass";
+import Form from "./Form";
 
 const App = () => {
 	return (
-		<div>
-			<h1>App</h1>
-			<Posts />
-			{/* <PostClass /> */}
-		</div>
+		<BrowserRouter>
+			<Header />
+			<Route path="/" exact component={Posts} />
+			<Route path="/form" exact component={Form} />
+		</BrowserRouter>
 	);
 };
 

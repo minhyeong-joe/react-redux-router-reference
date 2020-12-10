@@ -13,7 +13,7 @@ class PostsClass extends Component {
 		console.log("fetched Posts:", this.props.posts);
 		return (
 			<div>
-				<h3>Class-based Posts</h3>
+				<h1>Class-based Posts</h1>
 			</div>
 		);
 	}
